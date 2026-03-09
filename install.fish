@@ -161,6 +161,10 @@ else
 end
 fish -c 'rm -f caelestia-meta-*.pkg.tar.zst' 2> /dev/null
 
+# Install additional packages
+log 'Installing additional packages...'
+$aur_helper -S --needed google-chrome mpv kitty aria2 yt-dlp thunar uwsm qbittorrent zoxide $noconfirm
+
 # Install hypr* configs
 if confirm-overwrite $config/hypr
     log 'Installing hypr* configs...'
@@ -179,6 +183,42 @@ end
 if confirm-overwrite $config/foot
     log 'Installing foot config...'
     ln -s (realpath foot) $config/foot
+end
+
+# Kitty
+if confirm-overwrite $config/kitty
+    log 'Installing kitty config...'
+    ln -s (realpath kitty) $config/kitty
+end
+
+#mpv
+if confirm-overwrite $config/mpv
+    log 'Installing mpv config...'
+    ln -s (realpath mpv) $config/mpv
+end
+
+#aria2
+if confirm-overwrite $config/aria2
+    log 'Installing aria2 config...'
+    ln -s (realpath aria2) $config/aria2
+end
+
+#Thunar
+if confirm-overwrite $config/Thunar
+    log 'Installing thunar config...'
+    ln -s (realpath thunar) $config/Thunar
+end
+
+#Chrome
+if confirm-overwrite $config/chrome-flags.conf
+    log 'Installing chrome config...'
+    ln -s (realpath chrome/chrome-flags.conf) $config/chrome-flags.conf
+end
+
+# yt-dlp
+if confirm-overwrite $config/yt-dlp
+    log 'Installing yt-dlp config...'
+    ln -s (realpath yt-dlp) $config/yt-dlp
 end
 
 # Fish

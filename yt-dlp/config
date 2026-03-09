@@ -1,0 +1,40 @@
+# --- NETWORK & SPEED ---
+# Use aria2 as the external downloader
+--downloader aria2c
+# Aria2 specific arguments: 16 connections, 1M split size for speed
+--downloader-args "aria2c:-x 16 -k 1M --file-allocation=none"
+# Continue downloads if interrupted
+--continue
+# Retry 10 times before giving up
+--retries 10
+
+# --- VIDEO QUALITY & FORMAT ---
+# Pick the best video and best audio, or best combined
+-f "bestvideo+bestaudio/best"
+# Prefer MP4/M4A for compatibility, or MKV for everything
+--merge-output-format mkv
+
+# --- BROWSER INTEGRATION ---
+# Automatically pull cookies from your AUR Chrome to bypass login walls/premium checks
+--cookies-from-browser google-chrome
+
+# --- METADATA & POST-PROCESSING ---
+# Embed the thumbnail in the video file
+--embed-thumbnail
+# Embed metadata (title, artist, etc.)
+--add-metadata
+# Embed subtitles (if available)
+--write-subs
+--embed-subs
+--sub-langs "en.*"
+
+# --- OUTPUT & PATHS ---
+# Organize files: Title [ID].extension
+# You can change ~/Videos/yt-dlp to your preferred path
+-o "~/Videos/yt-dlp/%(title)s [%(id)s].%(ext)s"
+
+# --- SPONSORBLOCK (Optional but highly recommended) ---
+# Automatically remove sponsor segments (requires yt-dlp to be up to date)
+--sponsorblock-remove all
+
+--cookies-from-browser chrome

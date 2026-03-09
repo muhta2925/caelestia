@@ -1,4 +1,33 @@
 {
+    "workbench.colorTheme": "Wal",
+    "gitlens.ai.model": "gemini:gemini-2.5-flash",
+    "git.autofetch": true,
+    "vscord.app.name": "VSCodium",
+    "vscord.status.idle.check": false,
+    
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "claudeCode.preferredLocation": "panel",
+    "http.systemCertificatesNode": true,
     "editor.renderWhitespace": "trailing",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -10,7 +39,6 @@
     "editor.formatOnSave": true,
     "prettier.printWidth": 120,
     "prettier.arrowParens": "avoid",
-    "workbench.colorTheme": "Caelestia",
     "diffEditor.hideUnchangedRegions.enabled": true,
     "workbench.list.smoothScrolling": true,
     "editor.smoothScrolling": true,

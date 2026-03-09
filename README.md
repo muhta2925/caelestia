@@ -1,6 +1,6 @@
 # caelestia
 
-This is the main repo of the caelestia dots and contains the user configs for
+This is a fork of the caelestia dots and contains the user configs for
 apps. This repo also includes an install script to install the entire dots.
 
 ## Installation
@@ -34,7 +34,7 @@ options:
 For example:
 
 ```sh
-git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
+git clone https://github.com/axioncs/caelestia.git ~/.local/share/caelestia
 ~/.local/share/caelestia/install.fish
 ```
 
@@ -134,10 +134,11 @@ Here's a list of useful keybinds though:
 -   `Super` - open launcher
 -   `Super` + `#` - switch to workspace `#`
 -   `Super` `Alt` + `#` - move window to workspace `#`
--   `Super` + `T` - open terminal (foot)
--   `Super` + `W` - open browser (zen)
+-   `Super` + `T` - open terminal (kitty)
+-   `Super` + `W` - open browser
 -   `Super` + `C` - open IDE (vscodium)
 -   `Super` + `S` - toggle special workspace or close current special workspace
 -   `Ctrl` `Alt` + `Delete` - open session menu
 -   `Ctrl` `Super` + `Space` - toggle media play state
 -   `Ctrl` `Super` `Alt` + `R` - restart the shell
+-   
