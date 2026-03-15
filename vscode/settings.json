@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Wal",
+    "workbench.colorTheme": "Caelestia",
     "gitlens.ai.model": "gemini:gemini-2.5-flash",
     "git.autofetch": true,
     "vscord.app.name": "VSCodium",
